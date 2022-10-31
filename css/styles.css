@@ -12,27 +12,63 @@
 body {
     font-family: "Roboto", sans-serif;
     color: var(---text-black-color);
-    background-color: var(--section-bacground-color)
+    background-color: var(--section-bacground-color);
+
 }
 
 ul {
     list-style-type: none;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    border: none;
+}
+
 .visually-hidden {
- position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 /*Стили для секции header*/
 
+header {
+    border-bottom: 1px solid #ECECEC;
+    display: flex;
+    justify-content: space-between;
+}
 
 /*Часть лого web принимает голубой цвет */
 .web {
@@ -61,6 +97,15 @@ ul {
 }
 
 /*отрисовка меню навигации*/
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav>li {
+    margin-left: 54px;
+}
+
 .header-nav-point {
     text-decoration: none;
     color: var(--black-gray-color);
@@ -70,17 +115,27 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+
 .header-nav-active {
-   text-decoration: none;
+    text-decoration: none;
     color: var(--blue-color);
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em; 
+    letter-spacing: 0.02em;
 }
 
 /*отрисовка ссылок*/
+.header-contact {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-contact>li {
+    margin-right: 50px;
+}
+
 .header-contact-point {
     text-decoration: none;
     font-weight: 500;
@@ -98,6 +153,16 @@ ul {
     color: var(--blue-color);
 }
 
+.container>nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header>.container {
+    display: flex;
+    justify-content: space-between;
+}
+
 /*Стили для секции main*/
 
 /*задание общего стиля заголовкам h2 с одинаковыми стилями шрифта */
@@ -113,6 +178,8 @@ ul {
 /*определение цвета фона  для секции герой*/
 .hero {
     background-color: var(--footer-and-hero-bacground-color);
+    text-align: center;
+
 }
 
 /*определение шрифта заголовка первого уровня для секции герой*/
@@ -120,7 +187,7 @@ ul {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
+
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--text-white-color);
@@ -128,20 +195,12 @@ ul {
 
 /*отрисовка кнопки для секции герой*/
 .hero-button {
-    /*position: absolute;
-    width: 216px;
-    height: 50px;
-    left: 692px;
-    top: 430px;*/
 
     cursor: pointer;
 
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
 
@@ -149,6 +208,8 @@ ul {
     background: var(--blue-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+
+    margin-top: 30px;
 
 }
 
@@ -164,7 +225,18 @@ ul {
 
 /*определение заголовка секции Особливості. Потом надо сделать невидимым*/
 .feature-h2 {
-/*.visually-hidden */
+    /*.visually-hidden */
+}
+
+.feature-list {
+    margin-top: 94px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.feature-card {
+    gap: 30px;
+    width: calc(100%-(3*30px)/4);
 }
 
 /*определение заголовка карточек в секции Особливості. */
@@ -174,6 +246,7 @@ ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--black-gray-color);
+    margin-bottom: 10px;
 }
 
 /*определение параграфа карточек в секции Особливості. */
@@ -186,7 +259,14 @@ ul {
 
 /*определение стилей секции Чим ми займаємося */
 
+.activity>ul {
+    display: flex;
+    gap: 30px;
+}
 
+.index-h2 {
+    margin-bottom: 50px;
+}
 
 /*определение стилей секции Наша команда */
 
@@ -197,23 +277,20 @@ ul {
 
 /*формирование карточек в секции Наша команда. */
 .teams-card {
-    /* display: inline-block;*/
+
     width: 270px;
     height: 368px;
     background-color: var(--section-bacground-color) box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
 }
 
-/*определение заголовка секции Наша команда ... переопределено в style-h2
-.teams-h2 {
-   
-font-size: 36px;
-line-height: 1.17;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--black-gray-color);
+.teams>ul {
+    display: flex;
+    gap: 30px;
 }
-*/
 
 /*определение заголовка карточки секции Наша команда */
 .teams-h3 {
@@ -222,6 +299,9 @@ color: var(--black-gray-color);
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--black-gray-color);
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 /*определение параграфа карточки секции Наша команда */
@@ -230,14 +310,16 @@ color: var(--black-gray-color);
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--light-gray-color);
+    text-align: center;
 }
 
 /*определение стилей футера */
 footer {
     background-color: var(--footer-and-hero-bacground-color);
+
 }
 
-/*
+address {}
 
 /*определение стилей для адреса -город\улица. Общий класс не срабатывает*/
 .city {
@@ -274,20 +356,19 @@ footer {
 /*задание стилей для страницы портфолио */
 
 /*Стилизация секции main portfolio.html*/
-
-/*Заголовок секции сделать позже невидимым. */
-.portfolio-h1 {
-   
-    /*visibility: hidden;*/
- /*used class .visually-hidden */
-
+.filter {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 56px;
 }
 
 /*определям внешний вид кнопок фильтра работ */
 .filter-button {
     background: #F5F4FA;
     border-radius: 4px;
-    border-color: #F5F4FA;
+    border: none;
+    padding: 8px 22px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -310,12 +391,19 @@ footer {
 }
 
 /*Формируем список примеров работ и определяем стили карточек*/
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding-left: 0;
+    padding-right: 0;
+}
 
 .portfolio-list-card {
     background: var(--section-bacground-color);
     border: 1px solid #EEEEEE;
-    width: 370px;
-    box-sizing: border-box;
+
+
 }
 
 /*Убираем подчеркивание тега <а> */
