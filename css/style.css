@@ -5,19 +5,13 @@
     --light-gray-color: #757575;
     --text-white-color: #fff;
     --text-black-color: #000000;
-    --section-bacground-color: #fff;
+    --section-bacground-color: #F5F4FA;
     --footer-and-hero-bacground-color: #2F303A;
+    
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    color: var(---text-black-color);
-    background-color: var(--section-bacground-color);
-
-}
-
-ul {
-    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1,
@@ -30,11 +24,19 @@ p {
     margin: 0;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
 img {
     display: block;
-    border: none;
+    max-width: 100%;
+    height: auto;
 }
-
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -47,27 +49,66 @@ img {
     clip-path: inset(50%);
     margin: -1px;
 }
-
 .container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-
+    
+       
 }
-
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+   
+    
 }
 
-/*Стили для секции header*/
+
+/*  ======================= 
+    ==== Секция header ====
+    =======================
+*/
 
 header {
-    border-bottom: 1px solid #ECECEC;
+border-bottom: 1px solid #ECECEC;   
+}
+
+.header-section {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+/*Вся Навигация  Лого + Студия - Портфолио - Контакты отображаются в одну линию*/
+.container > nav {
+    display: flex;
+    justify-content: space-between;   
+}
+/*Вторая часть навигации : Список  Студия - Портфолио - Контакты отображаются в одну линию*/
+.ul-header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+/* Список  Студия - Портфолио - Контакты . Формирование отступов между пунктами */
+.ul-header-nav > li:not(:first-child) {
+    padding-left: 50px;
+}
+/*Список  Контактов : телефон - email отображаются в одну линию*/
+.header-contact {
+    display: flex;
+    justify-content: space-between;    
+}
+/* Список  Контактов : телефон - email. Формирование отступов между пунктами */
+.header-contact > li:not(:last-child) {
+padding-right: 50px;
+}
+/* Задание отступов Логотипу для формирования верхних и нижних внутренних отступов секции Хедер + левый отступ Логотипа согласно макета*/
+.logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    padding-right: 93px;  
 }
 
 /*Часть лого web принимает голубой цвет */
@@ -91,20 +132,7 @@ header {
     letter-spacing: 0.03em;
 }
 
-/*убираем подчеркивание тега <a> в лого в header&footer */
-.none-underline {
-    text-decoration: none;
-}
-
 /*отрисовка меню навигации*/
-.header-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-.header-nav>li {
-    margin-left: 54px;
-}
 
 .header-nav-point {
     text-decoration: none;
@@ -126,16 +154,6 @@ header {
     letter-spacing: 0.02em;
 }
 
-/*отрисовка ссылок*/
-.header-contact {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.header-contact>li {
-    margin-right: 50px;
-}
-
 .header-contact-point {
     text-decoration: none;
     font-weight: 500;
@@ -153,33 +171,20 @@ header {
     color: var(--blue-color);
 }
 
-.container>nav {
-    display: flex;
-    justify-content: space-between;
-}
+/*  =================== 
+    === Секция main ====
+    ====================
+*/
 
-header>.container {
-    display: flex;
-    justify-content: space-between;
-}
-
-/*Стили для секции main*/
-
-/*задание общего стиля заголовкам h2 с одинаковыми стилями шрифта */
-.index-h2 {
-
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--black-gray-color);
-}
+/*     =================== 
+    === Секция main -> hero ====
+       ====================
+*/
 
 /*определение цвета фона  для секции герой*/
 .hero {
     background-color: var(--footer-and-hero-bacground-color);
     text-align: center;
-
 }
 
 /*определение шрифта заголовка первого уровня для секции герой*/
@@ -220,24 +225,10 @@ header>.container {
 
 }
 
-
-
-
-/*определение заголовка секции Особливості. Потом надо сделать невидимым*/
-.feature-h2 {
-    /*.visually-hidden */
-}
-
-.feature-list {
-    margin-top: 94px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.feature-card {
-    gap: 30px;
-    width: calc(100%-(3*30px)/4);
-}
+/*     ======================== 
+    === Секция main -> feature ====
+       ========================
+*/
 
 /*определение заголовка карточек в секции Особливості. */
 .feature-h3 {
@@ -256,40 +247,68 @@ header>.container {
     letter-spacing: 0.03em;
     color: var(--light-gray-color);
 }
+/*определение списка карточек в секции Особливості. */
+.feature-list {
+   
+    display: flex;
+    justify-content: space-between;
+}
+/*определение <li> карточек в секции Особливості. */
+.feature-card:not(:last-child) {
+   
+    padding-right: 30px;
+}
 
-/*определение стилей секции Чим ми займаємося */
-
-.activity>ul {
+/*     ======================== 
+    === Секция main -> activity ====
+       ========================
+*/
+.index-h2 {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--black-gray-color);
+}
+.activity {
+    
+    margin-top: 0;
+}
+.ul-activity-list {
     display: flex;
     gap: 30px;
+    padding-top: 50px;
+    padding-bottom: 94px;
+   
 }
 
-.index-h2 {
-    margin-bottom: 50px;
-}
-
-/*определение стилей секции Наша команда */
-
-/*Задание цвета фона секции Наша команда */
+/*     ======================== 
+    === Секция main -> teams ====
+       ========================
+*/
 .teams {
-    background-color: #F5F4FA;
+    background-color: var(--section-bacground-color);
+   
 }
-
 /*формирование карточек в секции Наша команда. */
-.teams-card {
+.li-teams-card {
 
     width: 270px;
     height: 368px;
-    background-color: var(--section-bacground-color) box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: var(--text-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    
+    
 
 }
 
-.teams>ul {
+.ul-teams-list {
     display: flex;
     gap: 30px;
+    
+    padding-top: 50px;
 }
 
 /*определение заголовка карточки секции Наша команда */
@@ -313,13 +332,22 @@ header>.container {
     text-align: center;
 }
 
-/*определение стилей футера */
+/*     ======================== 
+        === Секция footer ====
+       ========================
+*/
+
+
 footer {
     background-color: var(--footer-and-hero-bacground-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 
 }
 
-address {}
+address {
+    padding-top: 20px;
+}
 
 /*определение стилей для адреса -город\улица. Общий класс не срабатывает*/
 .city {
@@ -353,16 +381,22 @@ address {}
     color: var(--text-white-color);
 }
 
-/*задание стилей для страницы портфолио */
+/*  ======================= 
+    ==== Portfolio.html ====
+    =======================
+*/
 
-/*Стилизация секции main portfolio.html*/
+.portfolio > .container {
+    
+    padding-left: 0;
+    padding-right: 0;
+}
 .filter {
     display: flex;
     justify-content: center;
     gap: 8px;
-    margin-bottom: 56px;
+    padding-bottom: 56px;
 }
-
 /*определям внешний вид кнопок фильтра работ */
 .filter-button {
     background: #F5F4FA;
@@ -377,7 +411,6 @@ address {}
     color: var(--black-gray-color);
     cursor: pointer;
 }
-
 /*переопределяем цвет кнопок фильтра работ при ховере\фокусе\active*/
 .filter-button:hover,
 .filter-button:active,
@@ -389,30 +422,22 @@ address {}
     /*border-color: var(--blue-color);*/
     color: var(--text-white-color);
 }
-
 /*Формируем список примеров работ и определяем стили карточек*/
-.portfolio-list {
+.ul-portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
-    padding-left: 0;
-    padding-right: 0;
+    gap: 30px;
+    justify-content: space-between;
+  
 }
-
-.portfolio-list-card {
-    background: var(--section-bacground-color);
-    border: 1px solid #EEEEEE;
-
-
+.div-portfolio-list-name {
+    padding: 20px 24px;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
 }
-
-/*Убираем подчеркивание тега <а> */
-.portfolio-list-card-item {
-    text-decoration: none;
-}
-
 /*Задаем стиль заголовка карточки проекта*/
-.portfolio-list-card-item>h3 {
+.div-portfolio-list-name > h3 {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -420,9 +445,10 @@ address {}
 }
 
 /*Задаем стиль абзаца карточки проекта*/
-.portfolio-list-card-item>p {
+.div-portfolio-list-name > p {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--light-gray-color);
 }
+

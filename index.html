@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,21 +20,17 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="container header-section">
         <nav>
-          <a
-            href="./index.html"
-            lang="en"
-            class="none-underline"
-            target="_parent"
+          <a href="./index.html" lang="en" target="_parent" class="logo"
             ><span class="web">Web</span><span class="studio">Studio</span></a
           >
 
-          <ul class="header-nav">
+          <ul class="ul-header-nav">
             <li>
               <a href="./index.html" target="_self" class="header-nav-active"
                 >Студія</a
@@ -53,6 +49,7 @@
             </li>
           </ul>
         </nav>
+
         <ul class="header-contact">
           <li>
             <a href="mailto:info@devstudio.com" class="header-contact-point"
@@ -67,18 +64,22 @@
         </ul>
       </div>
     </header>
+
     <main>
-      <div class="container">
-        <section class="hero section">
+      <section class="hero section">
+        <div class="container">
           <h1 class="hero-h1">
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
           <button type="button" class="hero-button">Замовити послугу</button>
-        </section>
+        </div>
+      </section>
 
-        <section class="feature section">
+      <section class="feature section">
+        <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
+
           <ul class="feature-list">
             <li class="feature-card">
               <h3 class="feature-h3">Увага до деталей</h3>
@@ -87,6 +88,7 @@
                 формування позиції.
               </p>
             </li>
+
             <li class="feature-card">
               <h3 class="feature-h3">Пунктуальність</h3>
               <p class="feature-p">
@@ -94,12 +96,14 @@
                 тягне у себе.
               </p>
             </li>
+
             <li class="feature-card">
               <h3 class="feature-h3">Планування</h3>
               <p class="feature-p">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
+
             <li class="feature-card">
               <h3 class="feature-h3">Сучасні технології</h3>
               <p class="feature-p">
@@ -108,12 +112,15 @@
               </p>
             </li>
           </ul>
-        </section>
+        </div>
+      </section>
 
-        <section class="activity section">
+      <section class="activity">
+        <div class="container">
           <h2 class="index-h2">Чим ми займаємося</h2>
-          <ul>
-            <li>
+
+          <ul class="ul-activity-list">
+            <li class="li-activity-item">
               <img
                 src="./image/box1.jpg"
                 alt="крупним планом зображення програміста, який працює на робочому столі в офісі"
@@ -121,7 +128,7 @@
                 height="294"
               />
             </li>
-            <li>
+            <li class="li-activity-item">
               <img
                 src="./image/box2.jpg"
                 alt="дизайнери веб-інтерфейсу розробляють програми для смартфонів, команда творців працює інтерфейс мобільного телефону"
@@ -129,7 +136,7 @@
                 height="294"
               />
             </li>
-            <li>
+            <li class="li-activity-item">
               <img
                 src="./image/box3.jpg"
                 alt="творчий художник веб-дизайн із робочим графічним планшетом із вибором кольорів на планшеті зображена палітра"
@@ -138,12 +145,15 @@
               />
             </li>
           </ul>
-        </section>
+        </div>
+      </section>
 
-        <section class="teams section">
+      <section class="teams section">
+        <div class="container">
           <h2 class="index-h2">Наша команда</h2>
-          <ul>
-            <li class="teams-card">
+
+          <ul class="ul-teams-list">
+            <li class="li-teams-card">
               <img
                 src="./image/team1.jpg"
                 alt="один чоловік"
@@ -153,7 +163,8 @@
               <h3 class="teams-h3">Ігор Дем'яненко</h3>
               <p class="teams-p">Product Designer</p>
             </li>
-            <li class="teams-card">
+
+            <li class="li-teams-card">
               <img
                 src="./image/team2.jpg"
                 alt="одна жінка"
@@ -164,7 +175,8 @@
               <h3 class="teams-h3">Ольга Рєпіна</h3>
               <p class="teams-p">Frontend Developer</p>
             </li>
-            <li class="teams-card">
+
+            <li class="li-teams-card">
               <img
                 src="./image/team3.jpg"
                 alt="один чоловік без окулярів"
@@ -175,7 +187,8 @@
               <h3 class="teams-h3">Микола Тарасов</h3>
               <p class="teams-p">Marketing</p>
             </li>
-            <li class="teams-card">
+
+            <li class="li-teams-card">
               <img
                 src="./image/team4.jpg"
                 alt="один чоловік"
@@ -186,12 +199,12 @@
               <p class="teams-p">UI Designer</p>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-      <div class="container section">
+      <div class="container">
         <a href="./index.html" lang="en" class="none-underline"
           ><span class="web">Web</span
           ><span class="studio-footer">Studio</span></a

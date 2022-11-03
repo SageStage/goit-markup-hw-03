@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -21,22 +20,17 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-
   <body>
     <header>
-      <div class="container">
+      <div class="container header-section">
         <nav>
-          <a
-            href="./index.html"
-            lang="en"
-            class="none-underline"
-            target="_parent"
+          <a href="./index.html" lang="en" target="_parent" class="logo"
             ><span class="web">Web</span><span class="studio">Studio</span></a
           >
 
-          <ul class="header-nav">
+          <ul class="ul-header-nav">
             <li>
               <a href="./index.html" target="_self" class="header-nav-point"
                 >Студія</a
@@ -55,6 +49,7 @@
             </li>
           </ul>
         </nav>
+
         <ul class="header-contact">
           <li>
             <a href="mailto:info@devstudio.com" class="header-contact-point"
@@ -69,6 +64,7 @@
         </ul>
       </div>
     </header>
+
     <main>
       <section class="portfolio section">
         <div class="container">
@@ -88,14 +84,15 @@
             </li>
           </ul>
 
-          <ul class="portfolio-list">
-            <li class="portfolio-list-card">
+          <ul class="ul-portfolio-list">
+            <li class="li-portfolio-list-card">
               <!-- rel="noopenner noreferre nofollow"  использоваать? Переход на внешний ресурс?-->
+
               <a
                 href=""
                 target="_blank"
                 rel="noopenner noreferre nofollow"
-                class="portfolio-list-card-item"
+                class="a-portfolio-list-card-item"
               >
                 <img
                   src="./image/sam-tech.jpg"
@@ -103,16 +100,18 @@
                   width="370"
                   height="294"
                 />
-                <h3>Технокряк</h3>
-                <p>Веб-сайт</p>
+                <div class="div-portfolio-list-name">
+                  <h3>Технокряк</h3>
+                  <p>Веб-сайт</p>
+                </div>
               </a>
             </li>
-            <li class="portfolio-list-card">
+            <li class="li-portfolio-list-card">
               <a
                 href=""
                 target="_blank"
                 rel="noopenner noreferre nofollow"
-                class="portfolio-list-card-item"
+                class="a-portfolio-list-card-item"
               >
                 <img
                   src="./image/sam-neworlean.jpg"
@@ -120,16 +119,20 @@
                   width="370"
                   height="294"
                 />
-                <h3>Постер <span lang="en">New Orlean vs Golden Star</span></h3>
-                <p>Дизайн</p>
+                <div class="div-portfolio-list-name">
+                  <h3>
+                    Постер <span lang="en">New Orlean vs Golden Star</span>
+                  </h3>
+                  <p>Дизайн</p>
+                </div>
               </a>
             </li>
-            <li class="portfolio-list-card">
+            <li class="li-portfolio-list-card">
               <a
                 href=""
                 target="_blank"
                 rel="noopenner noreferre nofollow"
-                class="portfolio-list-card-item"
+                class="a-portfolio-list-card-item"
               >
                 <img
                   src="./image/sam-seafood.jpg"
@@ -137,16 +140,18 @@
                   width="370"
                   height="294"
                 />
-                <h3>Ресторан <span lang="en">Seafood</span></h3>
-                <p>Додаток</p>
+                <div class="div-portfolio-list-name">
+                  <h3>Ресторан <span lang="en">Seafood</span></h3>
+                  <p>Додаток</p>
+                </div>
               </a>
             </li>
-            <li class="portfolio-list-card">
+            <li class="li-portfolio-list-card">
               <a
                 href=""
                 target="_blank"
                 rel="noopenner noreferre nofollow"
-                class="portfolio-list-card-item"
+                class="a-portfolio-list-card-item"
               >
                 <img
                   src="./image/sam-prime.jpg"
@@ -154,16 +159,18 @@
                   width="370"
                   height="294"
                 />
-                <h3>Проєкт <span lang="en">Prime</span></h3>
-                <p>Маркетинг</p>
+                <div class="div-portfolio-list-name">
+                  <h3>Проєкт <span lang="en">Prime</span></h3>
+                  <p>Маркетинг</p>
+                </div>
               </a>
             </li>
-            <li class="portfolio-list-card">
+            <li class="li-portfolio-list-card">
               <a
                 href=""
                 target="_blank"
                 rel="noopenner noreferre nofollow"
-                class="portfolio-list-card-item"
+                class="a-portfolio-list-card-item"
               >
                 <img
                   src="./image/sam-boxes.jpg"
@@ -171,16 +178,18 @@
                   width="370"
                   height="294"
                 />
-                <h3>Проєкт <span lang="en">Boxes</span></h3>
-                <p>Додаток</p>
+                <div class="div-portfolio-list-name">
+                  <h3>Проєкт <span lang="en">Boxes</span></h3>
+                  <p>Додаток</p>
+                </div>
               </a>
             </li>
-            <li class="portfolio-list-card">
+            <li class="li-portfolio-list-card">
               <a
                 href=""
                 target="_blank"
                 rel="noopenner noreferre nofollow"
-                class="portfolio-list-card-item"
+                class="a-portfolio-list-card-item"
               >
                 <img
                   src="./image/sam-inspiration.jpg"
@@ -188,16 +197,18 @@
                   width="370"
                   height="294"
                 />
-                <h3><span lang="en">Inspiration has no Borders</span></h3>
-                <p>Веб-сайт</p>
+                <div class="div-portfolio-list-name">
+                  <h3><span lang="en">Inspiration has no Borders</span></h3>
+                  <p>Веб-сайт</p>
+                </div>
               </a>
             </li>
-            <li class="portfolio-list-card">
+            <li class="li-portfolio-list-card">
               <a
                 href=""
                 target="_blank"
                 rel="noopenner noreferre nofollow"
-                class="portfolio-list-card-item"
+                class="a-portfolio-list-card-item"
               >
                 <img
                   src="./image/sam-limited.jpg"
@@ -205,16 +216,18 @@
                   width="370"
                   height="294"
                 />
-                <h3>Видання <span lang="en">Limited Edition</span></h3>
-                <p>Маркетинг</p>
+                <div class="div-portfolio-list-name">
+                  <h3>Видання <span lang="en">Limited Edition</span></h3>
+                  <p>Маркетинг</p>
+                </div>
               </a>
             </li>
-            <li class="portfolio-list-card">
+            <li class="li-portfolio-list-card">
               <a
                 href=""
                 target="_blank"
                 rel="noopenner noreferre nofollow"
-                class="portfolio-list-card-item"
+                class="a-portfolio-list-card-item"
               >
                 <img
                   src="./image/sam-lab.jpg"
@@ -222,16 +235,18 @@
                   width="370"
                   height="294"
                 />
-                <h3>Проєкт <span lang="en">LAB</span></h3>
-                <p>Дизайн</p>
+                <div class="div-portfolio-list-name">
+                  <h3>Проєкт <span lang="en">LAB</span></h3>
+                  <p>Дизайн</p>
+                </div>
               </a>
             </li>
-            <li class="portfolio-list-card">
+            <li class="li-portfolio-list-card">
               <a
                 href=""
                 target="_blank"
                 rel="noopenner noreferre nofollow"
-                class="portfolio-list-card-item"
+                class="a-portfolio-list-card-item"
               >
                 <img
                   src="./image/sam-growing.jpg"
@@ -239,16 +254,19 @@
                   width="370"
                   height="294"
                 />
-                <h3>Додаток <span lang="en">Growing Business</span></h3>
-                <p>Додаток</p>
+                <div class="div-portfolio-list-name">
+                  <h3>Додаток <span lang="en">Growing Business</span></h3>
+                  <p>Додаток</p>
+                </div>
               </a>
             </li>
           </ul>
         </div>
       </section>
     </main>
+
     <footer>
-      <div class="container section">
+      <div class="container">
         <a href="./index.html" lang="en" class="none-underline"
           ><span class="web">Web</span
           ><span class="studio-footer">Studio</span></a
