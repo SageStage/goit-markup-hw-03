@@ -397,6 +397,14 @@ address>ul>li:not(:last-child) {
     color: var(--blue-color);
 }
 
+.web-footer,
+.studio-footer {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
 /*Часть лого studio принимает белый цвет */
 .studio-footer {
     color: var(--text-white-color);
@@ -405,15 +413,6 @@ address>ul>li:not(:last-child) {
 /*Часть лого web принимает голубой цвет */
 .web-footer {
     color: var(--blue-color)
-}
-
-.web-footer,
-.studio-footer {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
 }
 
 /*  ======================= 
