@@ -7,7 +7,7 @@
     --text-black-color: #000000;
     --section-bacground-color: #F5F4FA;
     --footer-and-hero-bacground-color: #2F303A;
-    
+
 }
 
 body {
@@ -29,14 +29,17 @@ ul {
     margin: 0;
     padding: 0;
 }
+
 a {
     text-decoration: none;
 }
+
 img {
     display: block;
     max-width: 100%;
     height: auto;
 }
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -49,20 +52,22 @@ img {
     clip-path: inset(50%);
     margin: -1px;
 }
+
 .container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    
-       
+
+
 }
+
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-   
-    
+
+
 }
 
 
@@ -72,7 +77,7 @@ img {
 */
 
 header {
-border-bottom: 1px solid #ECECEC;   
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header-section {
@@ -80,35 +85,41 @@ border-bottom: 1px solid #ECECEC;
     justify-content: space-between;
     align-items: center;
 }
+
 /*Вся Навигация  Лого + Студия - Портфолио - Контакты отображаются в одну линию*/
-.container > nav {
+.container>nav {
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between;
 }
+
 /*Вторая часть навигации : Список  Студия - Портфолио - Контакты отображаются в одну линию*/
 .ul-header-nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
 }
+
 /* Список  Студия - Портфолио - Контакты . Формирование отступов между пунктами */
-.ul-header-nav > li:not(:first-child) {
-    padding-left: 50px;
+.ul-header-nav>li:not(:first-child) {
+    margin-left: 50px;
 }
+
 /*Список  Контактов : телефон - email отображаются в одну линию*/
 .header-contact {
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
 }
+
 /* Список  Контактов : телефон - email. Формирование отступов между пунктами */
-.header-contact > li:not(:last-child) {
-padding-right: 50px;
+.header-contact>li:not(:last-child) {
+    margin-right: 50px;
 }
+
 /* Задание отступов Логотипу для формирования верхних и нижних внутренних отступов секции Хедер + левый отступ Логотипа согласно макета*/
 .logo {
     padding-top: 24px;
     padding-bottom: 25px;
-    padding-right: 93px;  
+    padding-right: 93px;
 }
 
 /*Часть лого web принимает голубой цвет */
@@ -121,10 +132,9 @@ padding-right: 50px;
     color: var(--text-black-color);
 }
 
-/*определение шрифта и размера для начертания лого в header&footer */
+/*определение шрифта и размера для начертания лого в header */
 .web,
-.studio,
-.studio-footer {
+.studio {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -133,7 +143,6 @@ padding-right: 50px;
 }
 
 /*отрисовка меню навигации*/
-
 .header-nav-point {
     text-decoration: none;
     color: var(--black-gray-color);
@@ -213,8 +222,9 @@ padding-right: 50px;
     background: var(--blue-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-
+    border-color: transparent;
     margin-top: 30px;
+    padding: 10px 32px;
 
 }
 
@@ -247,16 +257,18 @@ padding-right: 50px;
     letter-spacing: 0.03em;
     color: var(--light-gray-color);
 }
+
 /*определение списка карточек в секции Особливості. */
 .feature-list {
-   
+
     display: flex;
     justify-content: space-between;
 }
+
 /*определение <li> карточек в секции Особливості. */
 .feature-card:not(:last-child) {
-   
-    padding-right: 30px;
+
+    margin-right: 30px;
 }
 
 /*     ======================== 
@@ -269,17 +281,21 @@ padding-right: 50px;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--black-gray-color);
+    margin-bottom: 50px;
+
 }
+
 .activity {
-    
+
     margin-top: 0;
+    padding-bottom: 94px;
 }
+
 .ul-activity-list {
     display: flex;
     gap: 30px;
-    padding-top: 50px;
-    padding-bottom: 94px;
-   
+
+
 }
 
 /*     ======================== 
@@ -288,8 +304,10 @@ padding-right: 50px;
 */
 .teams {
     background-color: var(--section-bacground-color);
-   
+
+
 }
+
 /*формирование карточек в секции Наша команда. */
 .li-teams-card {
 
@@ -299,16 +317,15 @@ padding-right: 50px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
-    
-    
+
+
 
 }
 
 .ul-teams-list {
     display: flex;
     gap: 30px;
-    
-    padding-top: 50px;
+
 }
 
 /*определение заголовка карточки секции Наша команда */
@@ -346,7 +363,11 @@ footer {
 }
 
 address {
-    padding-top: 20px;
+    margin-top: 20px;
+}
+
+address>ul>li:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 /*определение стилей для адреса -город\улица. Общий класс не срабатывает*/
@@ -376,9 +397,23 @@ address {
     color: var(--blue-color);
 }
 
-/*Часть лого web принимает белый цвет */
+/*Часть лого studio принимает белый цвет */
 .studio-footer {
     color: var(--text-white-color);
+}
+
+/*Часть лого web принимает голубой цвет */
+.web-footer {
+    color: var(--blue-color)
+}
+
+.web-footer,
+.studio-footer {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
 }
 
 /*  ======================= 
@@ -386,17 +421,14 @@ address {
     =======================
 */
 
-.portfolio > .container {
-    
-    padding-left: 0;
-    padding-right: 0;
-}
+
 .filter {
     display: flex;
     justify-content: center;
     gap: 8px;
-    padding-bottom: 56px;
+    margin-bottom: 50px;
 }
+
 /*определям внешний вид кнопок фильтра работ */
 .filter-button {
     background: #F5F4FA;
@@ -410,45 +442,50 @@ address {
     letter-spacing: 0.03em;
     color: var(--black-gray-color);
     cursor: pointer;
+    padding: 6px 22px;
 }
+
 /*переопределяем цвет кнопок фильтра работ при ховере\фокусе\active*/
 .filter-button:hover,
 .filter-button:active,
 .filter-button:focus {
     background: var(--blue-color);
-    /* shadow-middle */
+
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    /*border-color: var(--blue-color);*/
+
     color: var(--text-white-color);
 }
+
 /*Формируем список примеров работ и определяем стили карточек*/
 .ul-portfolio-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    justify-content: space-between;
-  
+
+
 }
+
 .div-portfolio-list-name {
     padding: 20px 24px;
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
 }
+
 /*Задаем стиль заголовка карточки проекта*/
-.div-portfolio-list-name > h3 {
+.div-portfolio-list-name>h3 {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--black-gray-color);
+    margin-bottom: 4px;
 }
 
 /*Задаем стиль абзаца карточки проекта*/
-.div-portfolio-list-name > p {
+.div-portfolio-list-name>p {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--light-gray-color);
 }
-
